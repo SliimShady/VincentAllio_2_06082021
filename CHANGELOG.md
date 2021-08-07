@@ -1,5 +1,9 @@
 # Changelog
 
+## 07/08/2021 Update
+
+- Ajout du package bootstrap
+
 ## 06/08/2021 Update
 
 - Création du projet
