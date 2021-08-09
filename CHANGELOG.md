@@ -1,8 +1,8 @@
 # Changelog
 
-## 07/08/2021 Update
+## 09/08/2021 Update
 
-- Ajout du package bootstrap
+- Création du header et de la zone de recherche
 
 ## 06/08/2021 Update
 

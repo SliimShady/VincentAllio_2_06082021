@@ -1,4 +1,203 @@
+@font-face {
+    font-family: Raleway;
+    src: url("./Ressources/fonts/Raleway-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: RalewayItalic;
+    src: url("./Ressources/fonts/Raleway-Italic-VariableFont_wght.ttf");
+}
+
 * {
     margin: 0;
     padding: 0;
+    font-family: Raleway;
+}
+
+body {
+    margin: 0 10%;
+}
+
+h2 {
+    margin-bottom: 10px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.logo {
+    flex: 2;
+}
+
+.pages {
+    display: flex;
+    color: black;
+    align-items: center;
+}
+
+.page {
+    padding: 50px 25px;
+    border-top: white 1px solid;
+}
+
+.page:hover {
+    border-top: #0065FC 1px solid;
+    color: #0065FC;
+}
+
+.login {
+    font-weight: bolder;
+    color: #0065FC;
+    padding-left: 25px;
+}
+
+.search>div {
+    margin-bottom: 30px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.searchBarIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f2f2;
+    border-radius: 15px 0 0 15px;
+}
+
+.searchBarBar {
+    height: 46px;
+    border: solid 2px #f2f2f2;
+
+}
+
+.searchBarBar input {
+    height: 48px;
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.searchBarButton {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0065FC;
+    color: white;
+    border-radius: 0 15px 15px 0;
+    padding: 0 20px;
+}
+
+.filters,
+.filtersList,
+.filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtersTitle,
+.filter {
+    margin-right: 20px;
+}
+
+.filter {
+    border: solid 2px #d9d9d9;
+    padding: 0;
+    border-radius: 30px;
+    margin-top: 10px;
+}
+
+.filterText {
+    margin: 10px 23px;
+}
+
+.filterIcon {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.foot {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 10px;
+}
+
+.fa-stack {
+    font-size: 0.7em;
+}
+
+.iconBlue {
+    color: #0065FC;
+}
+
+.fa-circle {
+    color: #d9d9d9;
+}
+
+@media only screen and (max-width: 603px) {
+    body {
+        margin: 0;
+    }
+
+    .logo,
+    .login,
+    .content {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .pages {
+        order: 1;
+        flex: 1;
+
+    }
+
+    .page {
+        padding: 10px 0;
+        margin-bottom: 10px;
+        flex: 1;
+        text-align: center;
+        border-bottom: solid 3px rgb(192, 192, 192);
+
+    }
+
+    .page:hover {
+        border-bottom: solid 3px #0065FC;
+        border-top: 0px;
+    }
+
+    .header {
+        margin-top: 20px;
+    }
 }
