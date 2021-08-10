@@ -90,11 +90,14 @@ a {
     justify-content: center;
     background: #f2f2f2;
     border-radius: 15px 0 0 15px;
+    min-width: 50px
 }
 
 .searchBarBar {
     height: 50px;
-    width: 234px;
+    width: auto;
+    max-width: 234px;
+    width: 70%;
     border: solid 2px #f2f2f2;
     color: black;
 }
@@ -118,7 +121,7 @@ a {
     border: solid 2px #0065FC;
     padding: 0 20px;
     cursor: pointer;
-    transition: all .7s ease;
+    transition: background .5s, color .5s ease;
 }
 
 .searchBarButton:hover {
@@ -149,7 +152,7 @@ a {
     border-radius: 30px;
     margin-top: 10px;
     cursor: pointer;
-    transition: all .7s ease;
+    transition: all .5s ease;
 }
 
 .filter:hover {
@@ -175,7 +178,7 @@ a {
     border-radius: 23px;
     align-items: center;
     justify-content: center;
-    transition: all .7s ease;
+    transition: all .5s ease;
 }
 
 .foot {
@@ -234,7 +237,7 @@ a {
     .pages {
         order: 1;
         flex: 1;
-
+        margin-top: 10px;
     }
 
     .page {
@@ -255,6 +258,15 @@ a {
         margin-top: 20px;
     }
 
+    .content {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .searchBarButton {
+        padding: 0 15px;
+    }
+
     .searchBarButton i {
         display: inline-block;
     }
@@ -263,9 +275,15 @@ a {
         display: none;
     }
 
+
+}
+
+@media only screen and (max-width: 800px) {
     .footer {
         height: auto;
         flex-direction: column;
+        width: 100%;
+        padding: 0;
     }
 
     .columnFooter {
