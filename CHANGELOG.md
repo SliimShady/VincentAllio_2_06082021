@@ -1,5 +1,10 @@
 # Changelog
 
+## 10/08/2021 Update
+
+- Ajout des transitions sur les boutons
+- Ajout du footer
+
 ## 09/08/2021 Update
 
 - Création du header et de la zone de recherche

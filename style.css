@@ -14,7 +14,8 @@
     font-family: Raleway;
 }
 
-body {
+.header,
+.content {
     margin: 0 10%;
 }
 
@@ -29,6 +30,11 @@ h3 {
     font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -39,17 +45,19 @@ h3 {
 
 .logo {
     flex: 2;
+    cursor: pointer;
 }
 
 .pages {
     display: flex;
-    color: black;
     align-items: center;
 }
 
 .page {
     padding: 50px 25px;
     border-top: white 1px solid;
+    cursor: pointer;
+    color: black;
 }
 
 .page:hover {
@@ -61,6 +69,7 @@ h3 {
     font-weight: bolder;
     color: #0065FC;
     padding-left: 25px;
+    cursor: pointer;
 }
 
 .search>div {
@@ -75,7 +84,7 @@ h3 {
 
 .searchBarIcon {
     width: 50px;
-    height: 50px;
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,13 +93,15 @@ h3 {
 }
 
 .searchBarBar {
-    height: 46px;
+    height: 50px;
+    width: 234px;
     border: solid 2px #f2f2f2;
-
+    color: black;
 }
 
 .searchBarBar input {
-    height: 48px;
+    height: 50px;
+    width: 234px;
     border: none;
     font-size: 1em;
     font-weight: bold;
@@ -103,9 +114,20 @@ h3 {
     align-items: center;
     justify-content: center;
     background: #0065FC;
-    color: white;
     border-radius: 0 15px 15px 0;
+    border: solid 2px #0065FC;
     padding: 0 20px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.searchBarButton:hover {
+    background: white;
+    color: #0065FC;
+}
+
+.searchBarButton i {
+    display: none;
 }
 
 .filters,
@@ -126,10 +148,22 @@ h3 {
     padding: 0;
     border-radius: 30px;
     margin-top: 10px;
+    cursor: pointer;
+    transition: all .7s ease;
+}
+
+.filter:hover {
+    border: solid 2px #0065FC;
+}
+
+.filter:hover .filterIcon {
+    color: #DEEBFF;
+    background-color: #0065FC;
 }
 
 .filterText {
     margin: 10px 23px;
+    color: black;
 }
 
 .filterIcon {
@@ -138,11 +172,11 @@ h3 {
     height: 50px;
     background-color: #DEEBFF;
     color: #0065FC;
-    border-radius: 50px;
+    border-radius: 23px;
     align-items: center;
     justify-content: center;
+    transition: all .7s ease;
 }
-
 
 .foot {
     display: flex;
@@ -151,22 +185,42 @@ h3 {
 
 .icon {
     margin-right: 10px;
+    color: #0065FC;
 }
 
 .fa-stack {
     font-size: 0.7em;
 }
 
-.iconBlue {
-    color: #0065FC;
-}
-
 .fa-circle {
     color: #d9d9d9;
 }
 
+
+.footer {
+    height: 217px;
+    width: 80%;
+    background: #f2f2f2;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+}
+
+.columnFooter {
+    flex: 1;
+}
+
+.columnFooter :nth-child(n) {
+    margin-bottom: 10px;
+}
+
+
 @media only screen and (max-width: 603px) {
-    body {
+
+    .header,
+    .content {
         margin: 0;
     }
 
@@ -199,5 +253,24 @@ h3 {
 
     .header {
         margin-top: 20px;
+    }
+
+    .searchBarButton i {
+        display: inline-block;
+    }
+
+    .searchBarButton h3 {
+        display: none;
+    }
+
+    .footer {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .columnFooter {
+        width: 80%;
+        margin: 25px 0;
+        flex: 0;
     }
 }
