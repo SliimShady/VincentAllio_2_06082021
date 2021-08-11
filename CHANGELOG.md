@@ -1,5 +1,9 @@
 # Changelog
 
+## 11/08/2021 Update
+
+- Ajout des hébergements par localité et les plus populaires
+
 ## 10/08/2021 Update
 
 - Ajout des transitions sur les boutons
