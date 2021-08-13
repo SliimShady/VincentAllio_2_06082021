@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: Raleway;
     src: url("./Ressources/fonts/Raleway-VariableFont_wght.ttf");
@@ -8,15 +9,17 @@
     src: url("./Ressources/fonts/Raleway-Italic-VariableFont_wght.ttf");
 }
 
+/* ----- */
+
+/* Global css parameters */
 * {
     margin: 0;
     padding: 0;
     font-family: Raleway;
 }
 
-.header,
-.content {
-    margin: 0 10%;
+html {
+    scroll-behavior: smooth;
 }
 
 h2 {
@@ -35,7 +38,15 @@ a {
     color: white;
 }
 
-.header {
+/* --------------------- */
+
+/* Header content css */
+header,
+.content {
+    margin: 0 10%;
+}
+
+header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -72,6 +83,9 @@ a {
     cursor: pointer;
 }
 
+/* --------------- */
+
+/* Search area (input and filters) css */
 .search>div {
     margin-bottom: 30px;
 }
@@ -112,11 +126,12 @@ a {
 }
 
 .searchBarButton {
-    height: 50px;
+    height: 54px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: #0065FC;
+    color: white;
     border-radius: 0 15px 15px 0;
     border: solid 2px #0065FC;
     padding: 0 20px;
@@ -148,6 +163,7 @@ a {
 
 .filter {
     border: solid 2px #d9d9d9;
+    background: white;
     padding: 0;
     border-radius: 30px;
     margin-top: 10px;
@@ -179,6 +195,7 @@ a {
     align-items: center;
     justify-content: center;
     transition: all .5s ease;
+    font-size: 20px;
 }
 
 .foot {
@@ -199,33 +216,16 @@ a {
     color: #d9d9d9;
 }
 
+/* --------------------------------- */
 
-.footer {
-    height: 217px;
-    width: 80%;
-    background: #f2f2f2;
-    display: flex;
-    padding: 0 10%;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 30px 0 0 0;
-}
-
-.columnFooter {
-    flex: 1;
-}
-
-.columnFooter :nth-child(n) {
-    margin-bottom: 10px;
-}
-
-.hebergements {
+/* Hosts area (sorted by city and most populars) css */
+#hebergements {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
 }
 
-.hebergements>div {
+#hebergements>div {
     border-radius: 20px;
 }
 
@@ -330,8 +330,9 @@ a {
     border-radius: 20px 20px 0 0;
 }
 
+/* ------------------------------------------------ */
 
-
+/* FA star icons css */
 .price {
     font-weight: bold;
 }
@@ -349,10 +350,35 @@ a {
     color: #0065FC;
 }
 
+/* ----------------- */
 
+/* Footer content css */
+footer {
+    height: 217px;
+    width: 80%;
+    background: #f2f2f2;
+    display: flex;
+    padding: 0 10%;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px 0 0 0;
+}
+
+.columnFooter {
+    flex: 1;
+}
+
+.columnFooter :nth-child(n) {
+    margin-bottom: 10px;
+}
+
+/* ------------------ */
+
+/* Media query for different breackpoints */
+/*** For mobiles ***/
 @media only screen and (max-width: 603px) {
 
-    .header,
+    header,
     .content {
         margin: 0;
     }
@@ -384,7 +410,7 @@ a {
         border-top: 0px;
     }
 
-    .header {
+    header {
         margin-top: 20px;
     }
 
@@ -408,7 +434,7 @@ a {
         display: none;
     }
 
-    .hebergements>div {
+    #hebergements>div {
         border-radius: 0px;
     }
 
@@ -423,6 +449,7 @@ a {
 
 }
 
+/*** Small tablets (or large mobiles) ***/
 @media only screen and (max-width: 728px) {
     .ville {
         display: block;
@@ -440,8 +467,9 @@ a {
 
 }
 
+/*** Tablets ***/
 @media only screen and (max-width: 800px) {
-    .footer {
+    footer {
         height: auto;
         flex-direction: column;
         width: 100%;
@@ -461,8 +489,9 @@ a {
     }
 }
 
+/*** Between tablets and pc screens ***/
 @media only screen and (max-width: 1286px) {
-    .hebergements {
+    #hebergements {
         display: grid;
     }
 
@@ -475,3 +504,5 @@ a {
         order: -1;
     }
 }
+
+/* --------------------------------------- */

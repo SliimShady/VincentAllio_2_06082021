@@ -1,5 +1,10 @@
 # Changelog
 
+## 13/08/2021 Update
+
+- Ajout des balises sémantiques
+- Ajout de quelques commentaires (html et css)
+
 ## 11/08/2021 Update
 
 - Ajout des hébergements par localité et les plus populaires

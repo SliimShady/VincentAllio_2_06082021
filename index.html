@@ -12,16 +12,18 @@
     </head>
 
     <body>
-        <div class="header">
+        <!-- Header with logo and few buttons -->
+        <header>
             <div class="logo">
                 <a href="./index.html"><img src="./Ressources/images/logo/Reservia.svg" alt="Logo Reservia" /></a>
             </div>
             <div class="pages">
-                <a href="#" class="page">Hébergements</a>
-                <a href="#" class="page">Activités</a>
+                <a href="#hebergements" class="page">Hébergements</a>
+                <a href="#activites" class="page">Activités</a>
             </div>
             <a href="#" class="login">S'inscrire</a>
-        </div>
+        </header>
+        <!-- -------------------------------- -->
 
         <div class="content">
             <div class="search">
@@ -29,6 +31,7 @@
                     <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
+                <!-- Area of search by city -->
                 <div class="searchBar">
                     <div class="searchBarIcon">
                         <i class="fas fa-map-marker-alt"></i>
@@ -36,34 +39,37 @@
                     <div class="searchBarBar">
                         <input type="search" placeholder="Marseille, France">
                     </div>
-                    <a href="#" class="searchBarButton">
+                    <button class="searchBarButton">
                         <i class="fas fa-search"></i>
                         <h3>Rechercher</h3>
-                    </a>
+                    </button>
                 </div>
+                <!-- ---------------------- -->
+                <!-- Buttons in order to filter the search -->
                 <div class="filters">
                     <div class="filtersTitle">
                         <h3>Filtres</h3>
                     </div>
                     <div class="filtersList">
-                        <a href="#" class="filter">
+                        <button class="filter">
                             <div class="filterIcon"><i class="fas fa-money-bill-wave"></i></div>
                             <div class="filterText"><h3>Économie</h3></div>
-                        </a>
-                        <a href="#" class="filter">
+                        </button>
+                        <button class="filter">
                             <div class="filterIcon"><i class="fas fa-child"></i></div>
                             <div class="filterText"><h3>Familiale</h3></div>
-                        </a>
-                        <a href="#" class="filter">
+                        </button>
+                        <button class="filter">
                             <div class="filterIcon"><i class="fas fa-heart"></i></div>
                             <div class="filterText"><h3>Romantique</h3></div>
-                        </a>
-                        <a href="#" class="filter">
+                        </button>
+                        <button class="filter">
                             <div class="filterIcon"><i class="fas fa-dog"></i></div>
                             <div class="filterText"><h3>Animaux autorisés</h3></div>
-                        </a>
+                        </button>
                     </div>
                 </div>
+                <!-- ------------------------------------ -->
                 <div class="foot">
                     <span class="fa-stack icon">
                         <i class="far fa-circle fa-stack-2x"></i>
@@ -74,9 +80,10 @@
                 </div>
             </div>
 
-            <div class="hebergements">
+            <div id="hebergements">
                 <div class="ville">
                     <h2>Hébergements à Marseille</h2>
+                    <!-- Host card -->
                     <div class="lieu">
                         <img src="./Ressources/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="image1" />
                         <h3>Auberge la Cannebière</h3>
@@ -89,6 +96,7 @@
                             <i class="fas fa-star"></i>
                         </div>
                     </div>
+                    <!-- -------- -->
                     <div class="lieu">
                         <img src="./Ressources/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="image2" />
                         <h3>Hôtel du port</h3>
@@ -153,6 +161,7 @@
                 <div class="populaires">
                     <h2>Les plus populaires</h2>
                     <i class="fas fa-chart-line"></i>
+                    <!-- Popular cards -->
                     <div class="lieu">
                         <img src="./Ressources/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="image7" />
                         <div class="description">
@@ -167,6 +176,7 @@
                             </div>
                         </div>
                     </div>
+                    <!-- ------------- -->
                     <div class="lieu">
                         <img src="./Ressources/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="image8" />
                         <div class="description">
@@ -197,12 +207,13 @@
                     </div>
                 </div>
             </div>
-            <div class="activites">
+            <div id="activites">
                 <h2>Activités à Marseille</h2>
             </div>
         </div>
 
-        <div class="footer">
+        <!-- Footer -->
+        <footer>
             <div class="columnFooter">
                 <h3>A propos</h3>
                 <p>Fonctionnement du site</p>
@@ -219,7 +230,8 @@
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>
             </div>
-        </div>
+        </footer>
+        <!-- ------ -->
 
     </body>
 
