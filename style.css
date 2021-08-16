@@ -35,7 +35,11 @@ h3 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
+}
+
+a:hover {
+    color: #0065FC;
 }
 
 /* --------------------- */
@@ -231,7 +235,7 @@ header {
 
 .ville {
     background: #f2f2f2;
-    padding: 30px 30px 30px 40px;
+    padding: 30px 30px 29px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -239,9 +243,14 @@ header {
     flex-direction: row;
 }
 
-.ville h2 {
+.ville h2,
+.ville h3 {
     display: inline-block;
     width: 100%;
+}
+
+.ville h3 {
+    margin-top: 14px;
 }
 
 .ville h2,
@@ -256,6 +265,10 @@ header {
     max-width: 236px;
     margin-bottom: 30px;
     margin-right: 10px;
+}
+
+.lieu {
+    box-shadow: 3px 5px 5px #e2e2e2;
 }
 
 .lieu h3,
@@ -294,6 +307,7 @@ header {
     border: solid 5px white;
     background: white;
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -331,6 +345,118 @@ header {
 }
 
 /* ------------------------------------------------ */
+
+/* Activities area css */
+#activities {
+    margin-top: 60px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 40px;
+    margin-top: 25px;
+}
+
+.largePlace,
+.singlePlace {
+    box-shadow: 3px 5px 5px #e2e2e2;
+    border-radius: 20px;
+}
+
+.largePlace .image,
+.singlePlace .image {
+    border-radius: 20px 20px 0 0;
+}
+
+.singlePlace h3,
+.largePlace h3 {
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* Position of activities cards */
+.LeftPlace {
+    grid-column: 1;
+    grid-row: 1;
+    grid-row-end: 3;
+}
+
+.LeftPlace .image {
+    height: 390px;
+    background: url(./Ressources/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.TopLeft {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.TopLeft .image {
+    height: 190px;
+    background: url(./Ressources/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.BottomLeft {
+    grid-column: 2;
+    grid-row: 2;
+    margin-top: 40px;
+}
+
+.BottomLeft .image {
+    height: 110px;
+    background: url(./Ressources/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.RightPlace {
+    grid-column: 3;
+    grid-row: 1;
+    grid-row-end: 3;
+}
+
+.RightPlace .image {
+    height: 390px;
+    background: url(./Ressources/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.TopRight {
+    grid-column: 4;
+    grid-row: 1;
+    margin-bottom: 40px;
+}
+
+.TopRight .image {
+    height: 150px;
+    background: url(./Ressources/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.BottomRight {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.BottomRight .image {
+    height: 155px;
+    background: url(./Ressources/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+/* ---------------------------- */
+
+/* ------------------- */
 
 /* FA star icons css */
 .price {
@@ -446,6 +572,10 @@ footer {
         width: auto;
     }
 
+    #activities {
+        margin: 0 37px;
+    }
+
 
 }
 
@@ -464,6 +594,9 @@ footer {
         width: 100%;
     }
 
+    .table {
+        display: block;
+    }
 
 }
 
@@ -481,11 +614,57 @@ footer {
         margin: 25px 0;
         flex: 0;
     }
+}
 
+@media only screen and (max-width: 1286px) {
+    .table {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 290px 290px 290px;
+        margin: 0;
+    }
 
+    .largePlace .image,
+    .singlePlace .image {
+        height: 200px;
+    }
 
-    .populaires .lieu {
-        margin-bottom: 10px;
+    .LeftPlace {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .TopLeft {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .BottomLeft {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .RightPlace {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    .TopRight {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .BottomRight {
+        grid-column: 2;
+        grid-row: 3;
+    }
+
+    .LeftPlace,
+    .TopLeft,
+    .BottomLeft,
+    .RightPlace,
+    .TopRight,
+    .BottomRight {
+        margin: 0 0 40px 0;
     }
 }
 
@@ -502,6 +681,7 @@ footer {
     .populaires {
         margin: 0;
         order: -1;
+        width: auto;
     }
 }
 

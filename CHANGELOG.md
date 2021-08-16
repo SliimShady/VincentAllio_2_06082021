@@ -1,5 +1,12 @@
 # Changelog
 
+## 16/08/2021 Update
+
+- Ajout des activités
+- Ajout des box shadow
+- Ajout des liens et boutons "hoverable"
+- Fix de quelques bugs responsive
+
 ## 13/08/2021 Update
 
 - Ajout des balises sémantiques
