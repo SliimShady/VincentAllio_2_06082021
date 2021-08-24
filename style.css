@@ -308,6 +308,7 @@ header {
     background: white;
     border-radius: 20px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 
